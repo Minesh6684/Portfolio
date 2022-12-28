@@ -1,0 +1,32 @@
+<!-- Responsive navbar - navbar-expand-md, where md is for medium size of the screen -->
+<nav class="navbar navbar-expand-md" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    <div class="container">
+    
+        <!-- Linked to home page -->
+        <a href="{{url_for('home')}}" class="navbar-brand text-warning fs-4">MT</a>
+        
+        <!-- Navbar hamburger Menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <i class="bi bi-list text-warning"></i>
+        </button>
+
+        <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header text-white">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Minesh Tandel</h5>
+              <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+             
+            <!-- Navbar links -->
+            <div class="offcanvas-body fs-4">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    {% for page in pages%}
+                    <li class="nav-item">
+                        <a class="nav-link {% if title in page.name %} text-primary {%endif%}" style="color: white;" href="{{url_for(page.source)}}">{{page.name}}</a>
+                    </li>
+                    {%endfor%}
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+</nav>

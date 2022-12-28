@@ -1,0 +1,366 @@
+.navbar {
+    background-color: #091930;
+}
+
+body {
+    background-color: #091930;
+}
+
+.home {
+    height: 69vh;
+}
+
+.about {
+    min-height: 70vh;
+}
+
+.work {
+    color: #cdd6f6;
+    background-color: #091930;
+}
+
+.work_head{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.work_container {
+    display: flex;
+    height: 400px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.res_img {
+    display: none;
+}
+
+.work_image1 {
+    background-image: url('../img/FeedEveryone.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 400px; */
+    width: 50%;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+
+.work_image2 {
+    background-image: url('../img/bookArena.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 400px; */
+    width: 50%;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+
+.work_image3 {
+    background-image: url('../img/FishOn.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 400px; */
+    width: 50%;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+
+.work_image4 {
+    background-image: url('../img/ttt.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* height: 400px; */
+    width: 50%;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+
+.work_image1:hover, .work_image2:hover, .work_image3:hover, .work_image4:hover {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.work_details, .work_details_reverse {
+    color: #cdd6f6;
+    width: 50%;
+}
+
+.work_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    position: relative;
+    left: -50px;
+}
+
+.work_description {
+    background-color: #102240;
+    text-align: end;
+    padding: 25px; 
+    border-radius: 5px;
+}
+
+.brief {
+    color: #a8b2d1;
+}
+
+.tools {
+    color: #63fedb;
+}
+
+.work_details_reverse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    position: relative;
+    right: -50px;
+}
+
+.work_description_reverse {
+    background-color: #102240;
+    text-align: start;
+    padding: 25px; 
+    border-radius: 5px;
+}
+
+.github_link{
+    padding-right: 15px;
+}
+.work_links {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.bi {
+    color: #cdd6f6;
+}
+
+.work_title {
+    font-size: 25px;
+    color: #cdd6f6
+}
+
+.work_title:hover, .bi:hover {
+    color: #63fedb;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    color: #cdd6f6;
+}
+
+.container_home {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.profile_image {
+    opacity: 0.5;
+    color: #091930;
+    height: 350px;
+    width: 291.66px;
+    background-color: #ACC8E5;
+}
+
+.profile_image:hover {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.intro {
+    position: relative;
+    top: 15px;
+    color: #cdd6f6;
+    font-size: 35px;
+}
+
+.profile_image, .intro {
+    margin: 20px;
+}
+
+.other_work {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.work_card {
+    background-color: #102240;
+    padding: 15px;
+    margin: 10px;
+    width: 500px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #091930;
+}
+
+
+@media only screen and (max-width: 960px) and (min-width: 751px) {
+
+    .work_container, .work_head {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    .other_work {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 611px) {
+
+    .container_home {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .profile_image {
+        opacity: 0.5;
+        color: #091930;
+        height: 250px;
+        width: 208.33px;
+        background-color: #ACC8E5;
+    }
+    
+    .intro {
+        top: 0;
+        color: #cdd6f6;
+        font-size: 25px;
+    }
+    
+    .profile_image, .intro {
+        margin: 20px;
+    }
+
+    .work_image1, .work_image2, .work_image3, .work_image4 {
+        display: none;
+    }
+
+    .work_details{
+        left: 0;
+        width: 100%;
+        /* height: 100%; */
+        border-radius: 10px;
+    }
+
+    .work_details_reverse {
+        right: 0;
+        width: 100%;
+    }
+
+    .work_container {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 610px){
+
+    .container_home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .profile_photo {
+        margin-top: 40px;
+    }
+    
+    .profile_image {
+        opacity: 0.5;
+        color: #091930;
+        height: 200px;
+        width: 166.66px;
+        background-color: #ACC8E5;
+        margin-bottom: 0;
+        /* position: relative;
+        left: -40px; */
+    }
+    
+    .intro {
+        top: 0;
+        color: #cdd6f6;
+        font-size: 25px;
+    }
+    
+    .profile_image, .intro {
+        margin: 20px;
+    }
+
+    .other_work {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-top: 25px;
+    }
+    
+    .work_card {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .work_image1, .work_image2, .work_image3, .work_image4 {
+        width: 100%;
+        /* height: 100%; */
+        display: none;
+    }
+
+    .work_details {
+        left: 0;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .work_details_reverse {
+        width: 100%;
+        right: 0;
+    }
+
+    .work_container {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .work_head {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+/* 
+    .container_home {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        border: 1px solid red;
+    }
+
+    .intro, .profile_image {
+        border: 1px solid red;
+    } */
+}
+
+@media only screen and (max-width: 400px) {
+    .intro {
+        font-size: 20px;
+    }    
+}

@@ -1,0 +1,27 @@
+{%extends 'base.html'%}
+{%block body%}
+<div class="home text-white">
+    <div class="container_home fs-3 lh-1" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> <!-- fs for font-size, lh for line height -->
+        <!-- Profile Image section -->
+        <div class="profile_photo"> <!-- position-absolute end-50, keeping the element at its parent container starting position and let the half of the page from end empty -->
+            <img src="../static/img/profile_photo.png" class="rounded-1 profile_image"> <!-- rounded-4 shapes the border of the element to round -->
+        </div>
+
+        <!-- A brief introduction -->
+        <!-- class="position-absolute top-50 start-50 intro" -->
+        <div class="intro"> 
+            <h1 class="mb-4">Hey, there</h1> <!-- mb-4 to render bottom margin of level-4 -->
+            <p class="mb-2">My Name is <span class="text-warning">Minesh Tandel</span></p> <!-- m-0 keeps margin 0 to all the sides-->
+            <p class="mb-4">I am a <span class="text-warning">Web Developer</span></p> <!-- text-warning gives color to the text -->
+            <hr>
+
+            <!-- icons for Github, linkedIn and E-Mail -->
+            <p>
+                <a href="https://linkedin.com/in/minesh-tandel-5a66bb1b1"><i class="bi bi-linkedin text-white"></i></a> 
+                <a href="https://github.com/Minesh6684"><i class="bi bi-github m-3 text-white"></i></a>
+                <a href="mailto:minesh9174@gmail.com"><i class="bi bi-envelope-fill text-white"></i></a>
+            </p>
+        </div>
+    </div>
+</div>
+{%endblock%}
