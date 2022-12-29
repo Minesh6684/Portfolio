@@ -24,3 +24,6 @@ def about():
 @app.route('/work')
 def work():
     return render_template('work.html', title='Work', pages=PAGES)
+
+if __name__ == '__main__':
+    app.run()
