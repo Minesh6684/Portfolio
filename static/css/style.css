@@ -164,16 +164,10 @@ body {
 }
 
 .profile_image {
-    opacity: 0.5;
     color: #091930;
     height: 350px;
     width: 291.66px;
     background-color: #ACC8E5;
-}
-
-.profile_image:hover {
-    opacity: 1;
-    transition: opacity 0.5s;
 }
 
 .intro {
@@ -233,7 +227,6 @@ a{
     }
     
     .profile_image {
-        opacity: 0.5;
         color: #091930;
         height: 250px;
         width: 208.33px;
@@ -285,7 +278,6 @@ a{
     }
     
     .profile_image {
-        opacity: 0.5;
         color: #091930;
         height: 200px;
         width: 166.66px;
